@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;500&display=swap');
+
+body
+{
+    position: relative;
+    width: 100vw;
+    height: 1117px;
+    background-color: #22252D;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+.Logo
+{
+    position: absolute;
+    left: 4.75%;
+    right: 93.23%;
+    top: 1.43%;
+    bottom: 93.91%;
+}
+
+.Artemis
+{
+    /* /Artemis */
+
+    position: absolute;
+    left: 7.12%;
+    right: 86.17%;
+    top: 2.33%;
+    bottom: 94.81%;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Accent #1 */
+
+    color: #25C3F4;
+}
+
+.Admin
+{
+    /* Admin */
+
+    position: absolute;
+    left: 14.18%;
+    right: 81.71%;
+    top: 2.33%;
+    bottom: 94.81%;
+
+    font-family: 'Roboto Mono';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Accent #1 */
+
+    color: #25C3F4;
+}
+
+.userAnalytics
+{
+    /* Home */
+
+    position: absolute;
+    width: 113px;
+    left: 25.17%;
+    right: 72.11%;
+    top: 2.86%;
+    bottom: 95.34%;
+
+    /* Shortcut Selected */
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+
+    /* Accent #1 */
+
+    color: #FFFFFF;
+}
+
+.dataAnalytics
+{
+    /* Analytics */
+
+    position: absolute;
+    width: 116px;
+    left: 32.87%;
+    right: 63.14%;
+    top: 2.86%;
+    bottom: 95.34%;
+
+    /* Shortcut Unselected */
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #25C3F4;
+
+    transition-timing-function: ease-in;
+}
+
+.Analytics:hover
+{
+    transition: 0.3s;
+    color: #E46036;
+}

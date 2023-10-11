@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.Rectangle1
+{
+    /* Rectangle 1 */
+
+    height: fit-content;
+
+    position: absolute;
+    left: 2.95%;
+    right: 3.01%;
+    top: 7.52%;
+    bottom: 28.92%;
+
+    /* Background 2 */
+
+    background: #2A2F3B;
+    border-radius: 20px;
+}
+
+.historyIcon
+{
+    /* Vector */
+
+    position: absolute;
+    width: 27px;
+    height: 24.01px;
+    margin-left: 36px;
+    margin-top: 50.99px;
+}
+
+.loginHistory
+{
+    /* Login History */
+
+
+    position: absolute;
+    width: 119px;
+    height: 30px;
+    margin-left: 72px;
+    margin-top: 49px;
+
+    /* Page Title */
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.line
+{
+    position: absolute;
+    width: 154px;
+    height: 0px;
+    margin-left: 36px;
+    margin-top: 90px;
+
+    /* Accent #1 */
+
+    border: 2px solid #25C3F4;
+    background: #25C3F4;
+}

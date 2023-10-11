@@ -1,0 +1,64 @@
+.briefcaseIcon
+{
+    /* globe-line-icon 1 */
+
+
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin-left: 250px;
+    margin-top: 238px;
+}
+
+.usersByOrganization
+{
+    /* Users by city */
+
+
+    position: absolute;
+    width: 122px;
+    height: 25px;
+    margin-left: 207px;
+    margin-top: 290.6px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.tableUsersByOrganization
+{
+    position: absolute;
+    margin-left: 207px;
+    margin-top: 340px;
+}
+
+td
+{
+    padding: 10px;
+    white-space: nowrap;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.percent
+{
+    margin-left: 12%;
+    border: 2px solid #25C3F4;
+    background: #25C3F4;
+}
