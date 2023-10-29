@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './table.css';
+import up from './up.png';
+// import down from './down.jpg';
+import reset from './reset.jpeg';
 
 class Table extends Component {
   constructor(props) {
@@ -106,160 +109,159 @@ class Table extends Component {
               }
             }
     }
-
-    return (
-      <div>
-        <input
-          type="text"
-          id="search"
-          name="search"
-          className="search"
-          placeholder="Search by City"
-          onChange={search}
-        />
-        <table id="table" className="table dataTable">
-          <tr className="tr dataTable header">
-            <th align="center" className="th dataTable">
-              City
-              <button
-                onClick={() => this.handleSort('city')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'city' ? sortDirection : null}
-              >
-                Asc
-              </button>
-              <button
-                onClick={() => this.handleSort('city')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'city' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
-              >
-                Desc
-              </button>
-              <button onClick={() => this.resetSorting('city')} className="reset-button">
-                Reset
-              </button>
-            </th>
-            <th align="left" className="th dataTable">
-              Date
-              <button
-                onClick={() => this.handleSort('date')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'date' ? sortDirection : null}
-              >
-                Asc
-              </button>
-              <button
-                onClick={() => this.handleSort('date')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'date' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
-              >
-                Desc
-              </button>
-              <button onClick={() => this.resetSorting('date')} className="reset-button">
-                Reset
-              </button>
-            </th>
-            <th align="left" className="th dataTable">
-              ADs
-              <button
-                onClick={() => this.handleSort('ad_count')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'ad_count' ? sortDirection : null}
-              >
-                Asc
-              </button>
-              <button
-                onClick={() => this.handleSort('ad_count')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'ad_count' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
-              >
-                Desc
-              </button>
-              <button onClick={() => this.resetSorting('ad_count')} className="reset-button">
-                Reset
-              </button>
-            </th>
-            <th align="left" className="th dataTable">
-              Phone
-              <button
-                onClick={() => this.handleSort('phone_count')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'phone_count' ? sortDirection : null}
-              >
-                Asc
-              </button>
-              <button
-                onClick={() => this.handleSort('phone_count')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'phone_count' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
-              >
-                Desc
-              </button>
-              <button onClick={() => this.resetSorting('phone_count')} className="reset-button">
-                Reset
-              </button>
-            </th>
-            <th align="left" className="th dataTable">
-              Email
-              <button
-                onClick={() => this.handleSort('email_count')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'email_count' ? sortDirection : null}
-              >
-                Asc
-              </button>
-              <button
-                onClick={() => this.handleSort('email_count')}
-                className="sort-button"
-                data-sorted={sortedColumn === 'email_count' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
-              >
-                Desc
-              </button>
-              <button onClick={() => this.resetSorting('email_count')} className="reset-button">
-                Reset
-              </button>
-            </th>
+return (
+  <div>
+    <input
+      type="text"
+      id="search"
+      name="search"
+      className="search"
+      placeholder="Search by City"
+      onChange={search}
+    />
+    <table id="table" className="table dataTable">
+      <tr className="tr dataTable header">
+        <th align="center" className="th dataTable">
+          City
+          <button
+            onClick={() => this.handleSort('city')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'city' ? sortDirection : null}
+          >
+            <img src={up} alt="Ascending" className="arrow-image" width={13.8} height={14}/>
+          </button>
+          {/* <button
+            onClick={() => this.handleSort('city')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'city' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
+          >
+            <img src={down} alt="Descending" className="arrow-image" width={13.8}/>
+          </button> */}
+          <button onClick={() => this.resetSorting('city')} className="reset-button">
+            <img src={reset} alt="Reset" className="reset-image" width={13.8}/>
+          </button>
+        </th>
+        <th align="left" className="th dataTable">
+          Date
+          <button
+            onClick={() => this.handleSort('date')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'date' ? sortDirection : null}
+          >
+            <img src={up} alt="Ascending" className="arrow-image" width={13.8} height={14}/>
+          </button>
+          {/* <button
+            onClick={() => this.handleSort('date')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'date' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
+          >
+            <img src={down} alt="Descending" className="arrow-image" width={13.8}/>
+          </button> */}
+          <button onClick={() => this.resetSorting('date')} className="reset-button">
+            <img src={reset} alt="Reset" className="reset-image" width={13.8}/>
+          </button>
+        </th>
+        <th align="left" className="th dataTable">
+          ADs
+          <button
+            onClick={() => this.handleSort('ad_count')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'ad_count' ? sortDirection : null}
+          >
+            <img src={up} alt="Ascending" className="arrow-image" width={13.8} height={14}/>
+          </button>
+          {/* <button
+            onClick={() => this.handleSort('ad_count')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'ad_count' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
+          >
+            <img src={down} alt="Descending" className="arrow-image" width={13.8}/>
+          </button> */}
+          <button onClick={() => this.resetSorting('ad_count')} className="reset-button">
+            <img src={reset} alt="Reset" className="reset-image" width={13.8}/>
+          </button>
+        </th>
+        <th align="left" className="th dataTable">
+          Phone
+          <button
+            onClick={() => this.handleSort('phone_count')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'phone_count' ? sortDirection : null}
+          >
+            <img src={up} alt="Ascending" className="arrow-image" width={13.8} height={14}/>
+          </button>
+          {/* <button
+            onClick={() => this.handleSort('phone_count')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'phone_count' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
+          >
+            <img src={down} alt="Descending" className="arrow-image" width={13.8}/>
+          </button> */}
+          <button onClick={() => this.resetSorting('phone_count')} className="reset-button">
+            <img src={reset} alt="Reset" className="reset-image" width={13.8}/>
+          </button>
+        </th>
+        <th align="left" className="th dataTable">
+          Email
+          <button
+            onClick={() => this.handleSort('email_count')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'email_count' ? sortDirection : null}
+          >
+            <img src={up} alt="Ascending" className="arrow-image" width={13.8} height={14}/>
+          </button>
+          {/* <button
+            onClick={() => this.handleSort('email_count')}
+            className="sort-button"
+            data-sorted={sortedColumn === 'email_count' ? (sortDirection === 'asc' ? 'desc' : 'asc') : null}
+          >
+            <img src={down} alt="Descending" className="arrow-image" width={13.8}/>
+          </button> */}
+          <button onClick={() => this.resetSorting('email_count')} className="reset-button">
+            <img src={reset} alt="Reset" className="reset-image" width={13.8}/>
+          </button>
+        </th>
+      </tr>
+      <tr className="tr spacing"></tr>
+      {data.slice(this.state.startNum, this.state.endNum).map((val, key) => {
+        return (
+          <tr key={key} className="tr dataTable">
+            <td align="left">{val.city}</td>
+            <td align="left">{val.date}</td>
+            <td align="left">{val.ad_count}</td>
+            <td align="left">{val.phone_count}</td>
+            <td align="left">{val.email_count}</td>
           </tr>
-          <tr className="tr spacing"></tr>
-          {data.slice(this.state.startNum, this.state.endNum).map((val, key) => {
-            return (
-              <tr key={key} className="tr dataTable">
-                <td align="left">{val.city}</td>
-                <td align="left">{val.date}</td>
-                <td align="left">{val.ad_count}</td>
-                <td align="left">{val.phone_count}</td>
-                <td align="left">{val.email_count}</td>
-              </tr>
-            );
-          })}
-          <tfoot>
-            <tr>
-              <td colspan="10">
-                <div style={{ display: 'flex', gap: '10px', float: 'right' }}>
-                  <button type="button" className="previous" onClick={this.previous}>
-                    Previous
-                  </button>
-                  <button type="button" className="next" onClick={this.next}>
-                    Next
-                  </button>
-                </div>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-        <h4 className="showingNumberOfEntries">
-          Showing {this.state.startNum} to {this.state.endNum} of {data.length} entries
-          <input
-            type="text"
-            id="itemsDisplayed"
-            name="itemsDisplayed"
-            className="itemsDisplayed"
-            onChange={this.set}
-          />
-        </h4>
-      </div>
-    );
-  }
+        );
+      })}
+      <tfoot>
+        <tr>
+          <td colspan="10">
+            <div style={{ display: 'flex', gap: '10px', float: 'right' }}>
+              <button type="button" className="previous" onClick={this.previous}>
+                Previous
+              </button>
+              <button type="button" className="next" onClick={this.next}>
+                Next
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <h4 className="showingNumberOfEntries">
+      Showing {this.state.startNum} to {this.state.endNum} of {data.length} entries
+      <input
+        type="text"
+        id="itemsDisplayed"
+        name="itemsDisplayed"
+        className="itemsDisplayed"
+        onChange={this.set}
+      />
+    </h4>
+  </div>
+);
+}
 }
 
 export default Table;
